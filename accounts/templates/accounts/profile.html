@@ -1,0 +1,42 @@
+{% extends "accounts/main.html" %} {% load static %} {% block content %}
+
+<div class="pr">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-xs-12">
+                {% if profile.image %}
+                <img src="{{ profile.image }}" class="rounded-circle" width="100"> {% else %}
+                <img src="{% static 'img/avatar.png' %}" class="rounded-circle" width="100"> {% endif %}
+                <hr>
+                <ul>
+                    <li><a href="{% url 'login:update' %}" id="set"><i class="fas fa-cog "></i> SETTING</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-6 col-xs-12">
+                <div class="st">
+                    <h1>Account Settings</h1>
+                    <h3>information</h3>
+                    <p><b>name :{{ user.username }}</b></p>
+                    <p><b>email :{{ user.email }}</b></p>
+                    <hr>
+                    <h3>Personal Information</h3>
+                    <p><b>user name :{{ user.username }}</b></p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var x = document.getElementById("my");
+    x.onclick = function() {
+        document.getElementById("orr").style.opacity = "1";
+
+    }
+</script>
+
+
+{% endblock content %}

@@ -1,0 +1,38 @@
+{% extends "products/main.html" %} {% load static %} {% block content %}
+
+<form class="sub-box text-center">
+    <i class="fas fa-search"></i>
+    <input class="ipt" type="email" name="" placeholder="search our store">
+    <i class="fas fa-suitcase"></i>
+</form>
+<div class="serve" id="service">
+    <div class="container">
+        <h2 class="text-center"> Products</h2>
+        <a class="shope" href="#">shop now</a>
+        <div id="owl-example" class="owl-carousel">
+            {% for pro in products %}
+            <div>
+                <div class="card" style="width: 13rem;">
+                    {% if pro.image %}
+                    <img src="{{ pro.image.url }}" class="card-img-top" alt="..."> {% else %}
+                    <img src="{% static 'img/1.jpg' %}" class="card-img-top" alt="..."> {% endif %}
+                    <div class="card-body">
+                        <h5 class="card-title">{{ pro.title }}</h5>
+                        <p class="card-text"><ins>{{ pro.price }}LE </ins> <del>{{ pro.discount_price }}LE</del></p>
+                        <a href="{% url 'products:products_detail' pro.slug %}" class="btn btn-primary">quick buy</a>
+                    </div>
+                </div>
+            </div>
+
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<!--End Services-->
+
+<!--Start Team-->
+<!--Start Footer-->
+
+
+{% endblock content %}

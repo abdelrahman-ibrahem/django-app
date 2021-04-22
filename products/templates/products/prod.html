@@ -1,0 +1,34 @@
+{% extends "products/main.html" %} {% load bootstrap4 %} {% load static %} {% block content %}
+
+
+<div class="prod">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-xs-12">
+                {% if products_details.image %}
+                <img style="width: 500px;height:350px;margin-bottom:20px;" src="{{ products_details.image.url }}"> {% else %}
+                <img src="{% static 'img/115_480x480.png' %}"> {% endif %}
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <h1>{{ products_details.title }}</h1>
+                <span>{{ products_details.price }}LE</span>
+                <span>size:</span>
+                <!-- <div class="radio">
+                    {{ products_details.size }}
+                </div> -->
+                <br>
+
+                <HR>
+
+                <a class="btn btn-dark" href="{% url 'products:add_to_cart' products_details.slug %}" name="solid out">solid out</a>
+                <hr>
+                <h1>description</h1>
+                <p>{{ products_details.descrption }}</p>
+            </div>
+
+
+        </div>
+    </div>
+
+</div>
+{% endblock content %}

@@ -1,0 +1,35 @@
+{% load static %} {% load bootstrap4 %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+
+
+</head>
+
+<body>
+
+    <div id="sign-in">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>Sign in</h1>
+                <form method="post">
+                    {% csrf_token %} {% bootstrap_form forms %}
+                    <input type="submit" name="sub" value="Sign In">
+                </form>
+                <a class="btn btn-danger" href="{% url 'login:register' %}">Register</a>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/jquery-3.5.1.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js'   %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>

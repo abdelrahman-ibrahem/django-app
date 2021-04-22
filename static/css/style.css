@@ -1,0 +1,338 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Jost', sans-serif;
+    
+}
+
+#scrollUp{
+  position: fixed;
+  right:20px;
+  bottom:20px;
+  border:none;
+  background-color: #1e6282;
+  color:#FFF;
+  width: 50px;
+  height:50px;
+  border-radius:50%;
+  font-size: 20px;
+  z-index: 2;
+  outline: none;
+}
+
+#scroolUp:active{
+  background-color:#e38b02;
+
+}
+
+.bg-primary{
+        background-color:#fff !important;
+}
+.navbar-dark .navbar-nav .nav-link{
+    color:black;
+}
+.getStarted{
+    border-radius: 30px;
+    border:2px solid #47b2e4;
+    padding:5px 20px;
+    font-weight: 500;
+    transition: all 0.5s ease-in-out;
+    color:#fff;
+    background-color: blueviolet;
+    text-decoration: none
+}
+.getStarted:hover{
+    background-color: #47b2e4
+}
+.navbar{
+    background-color: white !important;
+}
+.search i{
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+.sub-box i{
+  background-color:#FF9B00;
+  width: 40px;
+  line-height: 40px;
+  color:#fff;
+  text-align: center;
+
+}
+.ipt{
+  border:0;
+  outline: 0;
+  border-radius: 0
+}
+.ipt{
+width: 0;
+padding: 0;
+transition: .5s;
+}
+input.ipt{
+  padding: 0
+}
+.sub-box:hover > .ipt,.ipt:focus{
+  width: 300px;
+  padding:0 10px
+}
+.infoo{
+background-color: brown;
+margin: 10 auto;
+text-align: center;
+}
+.infoo div{
+float: left;
+background-color: brown;
+}
+.infoo p{
+    margin: 10 auto;
+    font-weight: bold;
+    color: aliceblue;
+}
+.clear{
+    clear: both;
+}
+.slid{
+    margin-top: 30px;
+    margin-bottom: 30px
+}
+
+.footer h2{
+  text-align: center;
+  color:#FFF;
+  margin-top: 50px;
+  margin-bottom:30px
+}
+/*Start Services*/
+.serve h2{
+       margin-bottom: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 40px;
+    color:#1e6282
+}
+.shope{font-size: 30px;display: block;position: relative;text-align: center}
+.serve{padding:70px 0;background-color:#f3f5fa;}
+.serve h2{color:#1e6282;font-weight: bold;font-size: 35;text-transform: uppercase}
+.serve .card{
+    background-color: #fff;
+    margin-top: 35px;transition:all .5s ease;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-left: 20px;
+}
+.serve .card:hover{
+    transform: translateY(-15px)
+}
+/*End Services*/
+/*Start Sign In*/
+.signin{
+    background: url('../images/sign.jpg');
+    padding: 90px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    position: relative;color:#fff
+}
+.signin .overlay{position: absolute;background-color: rgba(30,98,130,0.8);top:0;left:0;width: 100%;height: 100%}
+.signin button{
+    border-radius:20px;
+    background-color: transparent;
+    padding:5px 30px;
+    border:0;
+    color:#fff;
+    font-weight: 500;
+    transition: all 0.5s ease;
+    border:2px solid #fff;
+    margin-top:50px;
+    float: right
+}
+.signin button:hover{
+    background-color:#47b2e4;border:2px solid #47b2e4;
+}
+.signin h2{font-weight: bold}
+.signin p{font-size: 18px;line-height: 1.4}
+/*End Sign In*/
+
+/*Start Team */
+.team{
+    
+    padding:70px 0;background-color:#f3f5fa;
+}
+.team-h{
+    color:#1e6282;font-weight: bold;font-size: 35;
+}
+.team .team-opt{
+    margin-top: 20px; background-color: #fff;
+    padding:20px;
+    border-radius: 5px;
+    transition:all .5s ease;
+}
+.team .team-opt:hover{
+    transform: translateY(-15px)
+}
+.team .team-opt h3{
+    color:#1e6282;font-weight: bold;
+}
+.team .team-opt i{font-size: 22px;color:#777}
+.team .team-opt i:hover{
+    color:#47b2e4;
+    cursor: pointer;
+}
+.team img{width: 100%}
+/*End Team */
+
+
+/*Start Courses*/
+.courses {
+    padding: 70px 0
+}
+.courses h2{font-weight: bold;color:#1e6282;font-size: 35px;text-transform: uppercase}
+.courses .main-course h3{color:#1e6282;font-weight: bold;margin:20px 0}
+.courses .main-course img{width: 100%;transition: all 1s ease}
+.courses .main-course img:hover{transform: scale(1.1)}
+/*End Courses*/
+
+/*Start Newsteller*/
+.newsteller{
+    padding: 70px 0
+}
+.newsteller h2{font-weight: bold;color:#1e6282}
+.newsteller form{
+    text-align: center;
+}
+.newsteller form input{
+    border:0;
+    width: 400px;
+    border-radius: 20px;
+    outline: none;
+    padding: 5px 20px;
+    border:1px solid #ccc;
+    margin-bottom: 10px
+}
+.newsteller form a{
+    text-decoration: none;
+    background: #47b2e4;
+    color:#fff;
+    padding: 5px 20px;
+    border-radius: 20px;
+    
+
+}
+
+
+/*End Newsteller*/
+
+
+/*Start Footer*/
+.footer{
+    padding: 70px 0;
+        background-color:dimgrey;
+    color: aliceblue;
+
+}
+.footer h1,.footer h2{
+    font-weight:  color: aliceblue;
+}
+.footer ul{
+    list-style: none;padding: 0
+}
+.footer ul li a{
+     color: aliceblue !important;
+    text-decoration: none
+}
+.footer ul li {margin-bottom: 15px}
+.footer i{font-size: 25px;color:white;margin-right: 15px;transition: all .5s ease;
+    cursor: pointer}
+.footer ul li i{
+    color:#47b2e4;
+    font-size: 16px;
+    }
+.footer i:hover{color:cyan}
+/*End Footer*/
+
+/*Start Copyright*/
+.copy{
+    background-color: #1e6282;padding: 20px 0;color: #fff;text-align: center;
+}
+.copy h3{font-size: 20px}
+/*End Copyright*/
+.ours{margin:25px}
+.ours p{
+    font-size: 20px;
+}
+.prod span{
+    display: block;
+    font-size: 30;
+}
+.prod label{
+    font-size:30px;
+   
+    padding: 10px 10px;
+    cursor: pointer;
+    text-align: center;
+ 
+}
+.prod label:not(:last-of-type){
+       border-right: 1px solid white;
+}
+.prod label:hover{
+    background-color: grey;
+}
+.prod button{
+    width: 100%;
+    height: 50px;
+    font-size: 25;
+    background-color: gray;
+}
+.prod button:hover{
+    background-color: dimgrey;
+}
+select{
+    width: 70px;
+    font-size: 20px;
+    background-color: gray;
+    color: aliceblue;
+margin-top: 20px;
+}
+        .pr li{ list-style: none;
+            
+}
+.pr ul,i{
+    color: black;
+    font-size: 25PX; 
+}
+.pr .st p,.or{
+    font-size: 20px;
+    display: block;
+}
+.pr{
+    z-index: 1;
+      background-color: white;
+}
+.progress{
+    margin-bottom: 15px;
+}
+.or{opacity: 0;
+    background-color: white;
+    transition:all 0.8s ease;
+}
+.card{
+    margin-right: 10px;
+    
+}
+.radio{
+    display: inline-flex;
+    overflow: hidden;
+    background-color: gray;
+}
+.ra{
+    display: none;
+}
+.ra:checked + label{
+    background-color: aliceblue;
+}
